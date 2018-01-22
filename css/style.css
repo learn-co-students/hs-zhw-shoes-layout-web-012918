@@ -253,10 +253,16 @@ iframe {
 }
 
 	/********** Sections **********/
+	*{
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	}
 
 	section {
 		padding: 20px;
 		background: white;
+		margin-bottom: 10px;
 	}
 
 	section a {
@@ -264,6 +270,44 @@ iframe {
 		text-decoration: underline;
 	}
 
+	.col-1 {
+	  float: right;
+	  width: 31.5%;
+	  background: white;
+	  height: auto;
+	}
+
+	.col-2 {
+	  float: left;
+	  width: 66%;
+	  background: white;
+	  margin-right: 2%;
+	}
+
+	.col-3 {
+		width: 100%;
+		display: flex;
+		margin: 1% 0;
+	}
+
+	.col-4 {
+		float: left;
+		width: 32%;
+		margin-right: 2%;
+	}
+
+	.col-4:last-child {
+		margin-right: 0%;
+	}
+
+	.clearfix:after {
+	  content: ".";
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  height: 0;
+	  line-height: 0;
+	}
 /********** Details **********/
 
 #details {
@@ -303,3 +347,7 @@ footer {
 	}
 
 /* code examples copyright Jonathan Grover 2012 */
+
+
+
+
